@@ -1,8 +1,9 @@
+using HR.LeaveManagement.Domain.Common;
+
 namespace HR.LeaveManagement.Domain;
 
-public class LeaveType
+public class LeaveType : BaseEntity
 {
-    public int Id { get; set; }
-    public string Name { get; set; } = null!;
-    public int DefaultDays { get; set; }
+    public string Name { get; init; } = null!;
+    public int DefaultDays { get; init; }
 }
